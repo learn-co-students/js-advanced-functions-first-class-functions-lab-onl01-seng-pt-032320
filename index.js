@@ -16,4 +16,4 @@ const fareDoubler = (fare) => { return createFareMultiplier(2)(fare) }
 // function fareTripler(fare) { return createFareMultiplier(3)(fare) }
 const fareTripler = (fare) => { return createFareMultiplier(3)(fare) }
 
-function selectDifferentDrivers(array, fn) { return fn(array) }
+function selectDifferentDrivers(array, func) { return func(array) }
