@@ -10,10 +10,10 @@ function createFareMultiplier(int) { return function(fare) { return fare * int }
 
 // function fareDoubler(fare) { return fare * 2 }
 // function fareDoubler(fare) { return createFareMultiplier(2)(fare) }
-const fareDoubler = function(fare) { return createFareMultiplier(2)(fare) }
+const fareDoubler = (fare) => { return createFareMultiplier(2)(fare) }
 
 // function fareTripler(fare) {return fare * 3 }
 // function fareTripler(fare) { return createFareMultiplier(3)(fare) }
-const fareTripler = function(fare) { return createFareMultiplier(3)(fare) }
+const fareTripler = (fare) => { return createFareMultiplier(3)(fare) }
 
 function selectDifferentDrivers(array, fn) { return fn(array) }
