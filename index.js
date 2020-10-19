@@ -8,6 +8,20 @@ const returnFirstTwoDrivers = function (drivers) {
 const returnLastTwoDrivers = function (drivers) {
 return drivers.slice(2, 4);
 };
-returnLastTwoDrivers()
+// returnLastTwoDrivers()
 
-const selectingDrivers = [returnFirstTwoDrivers(), returnLastTwoDrivers()];
+const selectingDrivers = [returnFirstTwoDrivers, returnLastTwoDrivers];
+
+const createFareMultiplier = function (multi) {
+    // return the function that will multiply a fare for a ride accordingly.
+    return function (int) {
+      return multi * int;
+    };
+  };
+  
+  const fareDoubler = createFareMultiplier(2)
+
+  const fareTripler = createFareMultiplier(3)
+  const  selectDifferentDrivers = function(drivers, selectDrivers) {
+      return selectDrivers(drivers)
+  }
